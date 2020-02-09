@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -11,17 +14,16 @@
   <header class="header">
     <div class="header__top">
       <div class="container">
-        <div class="header__logo">
-          <a href="#">
-            <img src="img/logo-header.png" width="109px" height="19px" alt="">
-          </a>
-        </div>
-        <div class="header__top-btn">
-          <label for="search">Поиск:</label>
-          <input class="header__search" type="search" name="search" id="search">
-          <a class="header__btn--bookmarks" href="#">Закладки: 0</a>
-          <a class="header__btn--cart" href="#">Корзина: 0</a>
-          <button class="header__btn--order">Оформить заказ</button>
+        <div class="header__btns">
+          <div class="header__logo">
+            <a href="#">
+              <img src="img/logo-header.png" width="109px" height="19px" alt="">
+            </a>
+          </div>
+          <input class="header__search" type="search" name="search" id="search" placeholder="Поиск">
+          <a class="header__btn header__btn--bookmarks" href="#">Закладки: 0</a>
+          <a class="header__btn header__btn--cart" href="#">Корзина: 0</a>
+          <a class="header__btn header__btn--order" href="#">Оформить заказ</a>
         </div>
       </div>
     </div>
@@ -90,7 +92,7 @@
         <a class="map" href="#">
           <img src="img/map.png" width="300px" height="158px" alt="Изображение карты">
         </a>
-        
+
         </a>
         <a class="feedback-button" href="#">
           Заблудились? Напишите нам!
@@ -168,10 +170,11 @@
     </div>
   </div>
   <div class="modal-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65208041552586!2d30.322860502356562!3d59.93864124543618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1580239298729!5m2!1sru!2sru"
-     width="940px" height="447px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65208041552586!2d30.322860502356562!3d59.93864124543618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1580239298729!5m2!1sru!2sru"
+      width="940px" height="447px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   </div>
-  
+
 </body>
 
 </html>
