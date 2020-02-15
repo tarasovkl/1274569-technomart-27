@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,15 +20,15 @@
               <img src="img/logo-header.png" width="109px" height="19px" alt="">
             </a>
           </div>
-          <input class="header__search" type="search" name="search" id="search" placeholder="Поиск">
+          <input class="header__search" type="search" name="search" id="search" placeholder="Поиск:">
           <a class="header__btn header__btn--bookmarks" href="#">Закладки: 0</a>
           <a class="header__btn header__btn--cart" href="#">Корзина: 0</a>
           <a class="header__btn header__btn--order" href="#">Оформить заказ</a>
         </div>
       </div>
     </div>
-    <div class="header__content">
-      <div class="container">
+    <div class="container">
+      <div class="header__content">
         <div class="header__about">
           Интернет-магазин
           строительных материалов
@@ -41,10 +41,8 @@
         <button class="sign-in">Войти</button>
         <button class="sign-up">Регистрация</button>
       </div>
-    </div>
-    <div class="container">
       <nav class="menu">
-        <ul>
+        <ul class="menu__items">
           <li><a href="#">Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -59,42 +57,44 @@
   <div class="container">
     <article class="article">
       <div class="acticle__info">
-        <h2>КОМПАНИЯ «Техномарт»</h2>
-        <p>
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-          равнодушными любителей сэкономить на гастарбайтерах.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России!
-          Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul>
-          <li>
-            Деловые линии
-          </li>
-          <li>
-            Автотрейдинг
-          </li>
-          <li>
-            ЖелДорЭкспедиция
-          </li>
-        </ul>
-        <a class="company-button" href="#">
+        <h2 class="article__header">Компания «Техномарт»</h2>
+        <div class="article__info-about">
+          <p class="article__info-text">
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+            равнодушными любителей сэкономить на гастарбайтерах.
+          </p>
+          <p class="article__info-text">
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями:
+          </p>
+          <ul>
+            <li>
+              Деловые линии
+            </li>
+            <li>
+              Автотрейдинг
+            </li>
+            <li>
+              ЖелДорЭкспедиция
+            </li>
+          </ul>
+        </div>
+        <a class="article__company-button" href="#">
           Подробнее о компании
         </a>
       </div>
       <div class="article__contacts">
-        <h2>КОНТАКТЫ</h2>
-        <p>
+        <h2 class="article__header">Контакты</h2>
+        <p class="article__info-text">
           Вы можете забрать товар сами,
           заехав в наш офис:
         </p>
-        <a class="map" href="#">
+        <a class="article__map" href="#">
           <img src="img/map.png" width="300px" height="158px" alt="Изображение карты">
         </a>
 
         </a>
-        <a class="feedback-button" href="#">
+        <a class="article__feedback-button" href="#">
           Заблудились? Напишите нам!
         </a>
       </div>
@@ -103,41 +103,49 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__content">
-        <div class="footer__logo">
-          <a href="#">
-            <img src="img/logo-footer.png" width="138px" height="23px" alt="">
-          </a>
+        <div class="footer__content-head">
+          <div class="footer__logo">
+            <a href="#">
+              <img src="img/logo-footer.png" width="138px" height="23px" alt="">
+            </a>
+          </div>
+          <ul class=footer__nav>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
         </div>
-        <div class="footer__adress">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          +7 (812) 555-05-55
+        <div class="footer__content-bottom">
+          <div class="footer__adress">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            +7 (812) 555-05-55
+          </div>
+          <ul class="footer__nav footer__nav--color">
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
         </div>
-        <ul>
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-        </ul>
       </div>
-      <div class="footer__info">
+    </div>
+    <div class="footer__info">
+      <div class="container container--footer">
         <div class="footer__copy">
           © 2010–2019 Компания «Техномарт»
           Все права защищены
         </div>
-        <div class="footer__social">
-          <ul>
-            <li><a class="icon-back" href="#"><img src="img/icon-vk.svg" width="26px" height="15px" alt="ВК"></a></li>
-            <li><a class="icon-back" href="#"><img src="img/icon-fb.svg" width="12px" height="22px" alt="Фэйсбук"></a>
-            </li>
-            <li><a class="icon-back" href="#"><img src="img/icon-insta.svg" width="21px" height="21px"
-                  alt="Инстаграм"></a></li>
-          </ul>
-        </div>
+        <ul class="footer__social">
+          <li><a class="footer__icon-back" href="#"><img src="img/icon-vk.svg" width="26px" height="15px" alt="ВК"></a>
+          </li>
+          <li><a class="footer__icon-back" href="#"><img src="img/icon-fb.svg" width="12px" height="22px"
+                alt="Фэйсбук"></a>
+          </li>
+          <li"><a class="footer__icon-back" href="#"><img src="img/icon-insta.svg" width="21px" height="21px"
+                alt="Инстаграм"></a></li>
+        </ul>
         <div class="footer__mail">
           Обратная связь:
           <a href="#">mail@htmlacademy.ru</a>
@@ -148,6 +156,7 @@
         </div>
       </div>
     </div>
+
   </footer>
 
   <div class="modal-form">
@@ -166,7 +175,7 @@
       </div>
     </form>
     <div class="modal-form__btn-background">
-      <button type="submit">ОТПРАВИТЬ</button>
+      <button type="submit">Отправить</button>
     </div>
   </div>
   <div class="modal-map">
