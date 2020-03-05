@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'Cuprum', 'Aerial', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
 }
 
 a {
@@ -282,7 +282,6 @@ a {
   text-align: center;
   margin-top: 15px;
   margin-left: 25px;
-  
 }
 
 .main-info__slider {
@@ -291,7 +290,6 @@ a {
   position: relative;
   width: 620px;
   height: 266px;
-  
 }
 
 .slider-item-header {
@@ -301,7 +299,6 @@ a {
   text-transform: uppercase;
   line-height: 36px;
   margin: 0;
-  
 }
 
 .slider-item-label {
@@ -311,14 +308,12 @@ a {
   line-height: 24px;
 }
 
-
-
 .main-info__slider-scroll {
-width: 22px;
-height: 40px;
-border: none;
-background-color: transparent;
-padding: 0;
+  width: 22px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
 }
 
 .main-info__slider-scroll--left {
@@ -327,7 +322,8 @@ padding: 0;
   top: 113px;
   z-index: 2;
 }
-.main-info__slider-scroll--left::before { 
+
+.main-info__slider-scroll--left::before {
   content: '';
   display: block;
   width: 22px;
@@ -341,7 +337,8 @@ padding: 0;
   top: 113px;
   z-index: 2;
 }
-.main-info__slider-scroll--right::before { 
+
+.main-info__slider-scroll--right::before {
   content: '';
   display: block;
   width: 22px;
@@ -372,7 +369,7 @@ padding: 0;
   top: 0;
   width: 620px;
   height: 266px;
-  background-image: url('..//img/slider-image-1.jpg');
+  background-image: url('../img/slider-image-1.jpg');
   z-index: 1;
 }
 
@@ -382,7 +379,7 @@ padding: 0;
   top: 0;
   width: 620px;
   height: 266px;
-  background-image: url('..//img/slider-image-2.jpg');
+  background-image: url('../img/slider-image-2.jpg');
   z-index: 1;
 }
 
@@ -440,51 +437,15 @@ padding: 0;
 }
 
 .popular-brands__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 220px;
   height: 145px;
   margin: 0;
   margin-bottom: 20px;
   border: 1px solid #eaeaea;
-}
-
-.popular-brands__list-item:first-child img {
-  margin-top: 53px;
-  margin-left: 47px;
-}
-
-.popular-brands__list-item:nth-child(2) img {
-  margin-top: 50px;
-  margin-left: 48px;
-}
-
-.popular-brands__list-item:nth-child(3) img {
-  margin-top: 48px;
-  margin-left: 37px;
-}
-
-.popular-brands__list-item:nth-child(4) img {
-  margin-top: 21px;
-  margin-left: 9px;
-}
-
-.popular-brands__list-item:nth-child(5) img {
-  margin-top: 58px;
-  margin-left: 28px;
-}
-
-.popular-brands__list-item:nth-child(6) img {
-  margin-top: 35px;
-  margin-left: 48px;
-}
-
-.popular-brands__list-item:nth-child(7) img {
-  margin-top: 23px;
-  margin-left: 35px;
-}
-
-.popular-brands__list-item:last-child img {
-  margin-top: 34px;
-  margin-left: 10px;
 }
 
 .service {
@@ -785,7 +746,7 @@ padding: 0;
   width: 10px;
 }
 
-.manufacturer__title, .charge__title{
+.manufacturer__title, .charge__title {
   font-family: 'PTSans', sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -793,11 +754,7 @@ padding: 0;
   line-height: 30px;
   padding: 0;
   margin-bottom: 20px;
-  
 }
-
-
-
 
 .manufacturer label, .charge label {
   font-family: 'PTSans', sans-serif;
@@ -809,9 +766,6 @@ padding: 0;
   padding-left: 35px;
   margin-bottom: 17px;
   line-height: 20px;
-  
-  
-  
 }
 
 .manufacturer label::before, .charge label::before {
@@ -839,8 +793,6 @@ padding: 0;
   display: none;
 }
 
-
-
 .manufacturer label::before {
   background: url('../img/checkbox-off.svg') left center no-repeat;
 }
@@ -848,8 +800,6 @@ padding: 0;
 .manufacturer input:checked+label::before {
   background: url('../img/checkbox-on.svg') left center no-repeat;
 }
-
-
 
 .charge label::before {
   background: url('../img/radio-off.svg') left center no-repeat;
@@ -870,10 +820,7 @@ padding: 0;
   min-width: 220px;
 }
 
-
-
 .catalog {
-  
   max-width: 700px;
   font-family: 'PTSans', sans-serif;
 }
@@ -896,7 +843,6 @@ padding: 0;
   max-width: 155px;
   margin: 0 auto;
   font-size: 18px;
-  
 }
 
 .catalog__item-name {
@@ -944,7 +890,6 @@ padding: 0;
   flex-direction: column;
   min-height: 87px;
   margin-bottom: 21px;
-  
 }
 
 .catalog-btns {
@@ -952,6 +897,7 @@ padding: 0;
   font-size: 0;
   margin-left: 240px;
 }
+
 .catalog-btns__btn {
   width: 38px;
   height: 38px;
@@ -972,7 +918,8 @@ padding: 0;
   min-height: 261px;
   background-color: #f4f7f9;
 }
-.perforator-info h2{
+
+.perforator-info h2 {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 30px;
