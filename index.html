@@ -20,7 +20,9 @@
               <img src="img/logo-header.png" width="109" height="19" alt="">
             </a>
           </div>
-          <input class="header__search" type="search" name="search" id="search" placeholder="Поиск:">
+          <form class="header__search-form" action="">
+            <input class="header__search" type="search" name="search" id="search" placeholder="Поиск:">
+          </form>
           <a class="header__btn header__btn--bookmarks" href="#">Закладки: 0</a>
           <a class="header__btn header__btn--cart" href="#">Корзина: 0</a>
           <a class="header__btn header__btn--order" href="#">Оформить заказ</a>
@@ -38,8 +40,8 @@
           <a class="header__phone" href="tel:+78125550505">+7 (812) 555-05-55</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <button class="sign-in">Войти</button>
-        <button class="sign-up">Регистрация</button>
+        <a class="sign-in" href="#">Войти</a>
+        <a class="sign-up" href="#">Регистрация</a>
       </div>
       <nav class="menu">
         <ul class="menu__items">
@@ -74,7 +76,7 @@
       <div class="main-info__slider">
         <button class="main-info__slider-scroll main-info__slider-scroll--left"></button>
         <button class="main-info__slider-scroll main-info__slider-scroll--right"></button>
-        <a class="main-info__silder-button" href="catalog.html">Открыть каталог</a>
+        <a class="main-info__silder-button button-style" href="catalog.html">Открыть каталог</a>
         <div class="slider-item-1">
           <p class="slider-item-header">Дрели</p>
           <p class="slider-item-label">Соседям на радость!</p>
@@ -99,7 +101,7 @@
 
     <div class="popular">
       <h2>Популярные товары:</h2>
-      <a class="popular__button" href="#">все популярные товары</a>
+      <a class="popular__button button-style" href="#">все популярные товары</a>
     </div>
     <section class="main__catalog">
       <ul class="catalog__list">
@@ -113,7 +115,7 @@
             <a class="catalog__bookmark" href="#">В закладки</a>
           </p>
           <h3>
-            <a class="catalog__item-name" href="#">Перфоратор BOSCHBFG 9000</a>
+            <a class="catalog__item-name" href="#">Перфоратор BOSCH BFG 9000</a>
           </h3>
           <div class="catalog__price-wrapper">
             <p class="catalog__item-oldprice">32500 Р.</p>
@@ -147,14 +149,14 @@
             <a class="catalog__bookmark" href="#">В закладки</a>
           </p>
           <h3>
-            <a class="catalog__item-name" href="#">Перфоратор BOSCHBFG 3000</a>
+            <a class="catalog__item-name" href="#">Перфоратор BOSCH BFG 3000</a>
           </h3>
           <div class="catalog__price-wrapper">
             <p class="catalog__item-oldprice">30500 Р.</p>
             <a class="catalog__item-newprice" href="#">25500 Р.</a>
           </div>
         </li>
-        <li class="catalog__item">
+        <li class="catalog__item catalog__item--new">
           <p class="catalog__item-photo">
             <a href="#">
               <img src="img/Perforator_2.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></a>
@@ -175,7 +177,7 @@
 
     <div class="popular">
       <h2>Популярные производители:</h2>
-      <a class="popular__button" href="#">все производители</a>
+      <a class="popular__button button-style" href="#">все производители</a>
     </div>
 
     <section class="popular-brands">
@@ -225,26 +227,25 @@
         <div class="service__list-delivery">
           <p class="service__list-head">Доставка</p>
           <p class="service__list-about">
-            Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно!<br>
+            Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем,<br>
             поднимая его на ваш этаж!</p>
         </div>
         <div class="service__list-guarantee">
-          <p class="service__list-head">Доставка</p>
-          <p class="service__list-about">
-            Если купленный у нас товар поломается или заискрит,
+          <p class="service__list-head">Гарантия</p>
+          <p class="service__list-about service__list-about--guarantee">
+            Если купленный у нас товар поломается или заискрит,<br>
             а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
-            Мы обменяем сгоревший товар на новый.
+            Мы обменяем сгоревший товар на новый.<br>
             Дом уж восстановите как-нибудь сами.</p>
         </div>
         <div class="service__list-credit">
-          <p class="service__list-head">Доставка</p>
+          <p class="service__list-head">Кредит</p>
           <p class="service__list-about">
-            Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно!<br>
-            Ведь мы неплохо заработаем,<br>
-            поднимая его на ваш этаж!</p>
+            Залезть в долговую яму стало проще!<br>
+            Кредитные консультанты придут вам на помощь.</p>
+          <a class="service__list-sendbutton button-style" href="">Отправить заявку</a>
         </div>
       </div>
     </div>
@@ -276,7 +277,7 @@
             </li>
           </ul>
         </div>
-        <a class="article__company-button" href="#">
+        <a class="article__company-button button-style" href="#">
           Подробнее о компании
         </a>
       </div>
@@ -291,7 +292,7 @@
         </a>
 
         </a>
-        <a class="article__feedback-button" href="#">
+        <a class="article__feedback-button button-style" href="#">
           Заблудились? Напишите нам!
         </a>
       </div>
@@ -349,7 +350,7 @@
         </div>
         <div class="footer__developed">
           Разработано —
-          <a href="#">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
         </div>
       </div>
     </div>
@@ -372,7 +373,7 @@
       </div>
     </form>
     <div class="modal-form__btn-background">
-      <button type="submit">Отправить</button>
+      <button class=" button-style" type="submit">Отправить</button>
     </div>
   </div>
   <div class="modal-map">

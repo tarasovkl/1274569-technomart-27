@@ -20,9 +20,11 @@
                             <img src="img/logo-header.png" width="109px" height="19px" alt="">
                         </a>
                     </div>
-                    <input class="header__search" type="search" name="search" id="search" placeholder="Поиск">
+                    <form class="header__search-form" action="">
+                        <input class="header__search" type="search" name="search" id="search" placeholder="Поиск:">
+                    </form>
                     <a class="header__btn header__btn--bookmarks" href="#">Закладки: 0</a>
-                    <a class="header__btn header__btn--cart" href="#">Корзина: 0</a>
+                    <a class="header__btn header__btn--cart header__btn--addcart" href="#">Корзина: 10</a>
                     <a class="header__btn header__btn--order" href="#">Оформить заказ</a>
                 </div>
             </div>
@@ -39,12 +41,16 @@
                     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
                 <div class="header__account">
-                    <div class="header__account-name">
-                        Равшан Джамшутович
+                    <a class="header__account-name">Равшан Джамшутович
+                    </a>
+                    <a class="header__account-logout">
+                    </a>
+                    <div class="header__account-wrapper">
+                        <a class="header__orders" href="#">Мои заказы</a>
+                        <a class="header__account-personal" href="#">Личный кабинет</a>
                     </div>
-                    <a class="header__orders" href="#">Мои заказы</a>
-                    <a class="header__account-personal" href="#">Личный кабинет</a>
                 </div>
+
             </div>
             <nav class="menu">
                 <ul class="menu__items">
@@ -61,6 +67,7 @@
     </header>
     <main class="container">
         <ul class="breadcrumbs">
+            <li><a class="breadcrumbs__home" href="index.html"></a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Инструмент</a></li>
             <li>Перфораторы</li>
@@ -73,37 +80,31 @@
                 <p class="filter__label">Фильтр:</p>
             </div>
             <div class="sort">
-                <p class="sort__type sort__type--label">Сортировка:</p>
-                <p class="sort__type sort__type--price">По цене</p>
-                <p class="sort__type sort__type--type">По типу</p>
-                <p class="sort__type sort__type--function">По функционалу</p>
-                <button class="sort__up"></button>
-                <button class="sort__down"></button>
+                <a class="sort__type sort__type--label" href="#">Сортировка:</a>
+                <a class="sort__type sort__type--price" href="#">По цене</a>
+                <a class="sort__type sort__type--type" href="#">По типу</a>
+                <a class="sort__type sort__type--function" href="#">По функционалу</a>
+                <button class="sort__button sort__button--up"></button>
+                <button class="sort__button sort__button--down"></button>
             </div>
             <div class="catalog-wrapper2">
-
-                <form action="" method="GET">
-
+                <form class="filter-form" action="" method="GET">
                     <fieldset class="filter-item">
-
                         <legend>Цена:</legend>
                         <div class="range-filter">
                             <div class="range-controls">
                                 <div class="scale">
-                                    <div class="bar"></div>
+                                    <div class="bar" style="margin-left: 0%; width: 80%"></div>
                                 </div>
                                 <div class="toggle toggle--min"></div>
                                 <div class="toggle toggle--max"></div>
                             </div>
                             <div class="price-controls">
-                                <input type="number" name="min-price" value="0" placeholder="0">
-                                <input type="number" name="max-price" value="30000" placeholder="30000">
-
+                                <input type="number" name="min-price" value="0">
+                                <input type="number" name="max-price" value="30000">
                             </div>
                         </div>
-
                     </fieldset>
-
                 </form>
 
                 <div class="manufacturer">
@@ -127,8 +128,8 @@
                     <label for="Cable">Сетевые</label><br>
                     <input type="submit" value="Показать">
                 </div>
+                <input class="filter-form__button" type="submit" value="Показать">
             </div>
-
 
             <section class="catalog">
                 <ul class="catalog__list">
@@ -168,7 +169,7 @@
                             <a class="catalog__item-newprice" href="#">25500 Р.</a>
                         </div>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item catalog__item--new">
                         <p class="catalog__item-photo">
                             <a href="#">
                                 <img src="img/Perforator_3.png" width="218px" height="170px"
@@ -203,7 +204,7 @@
                             <a class="catalog__item-newprice" href="#">15500 Р.</a>
                         </div>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item catalog__item--new">
                         <p class="catalog__item-photo">
                             <a href="#">
                                 <img src="img/Perforator_2.png" width="218px" height="170px"
@@ -238,7 +239,7 @@
                             <a class="catalog__item-newprice" href="#">12500 Р.</a>
                         </div>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item catalog__item--new">
                         <p class="catalog__item-photo">
                             <a href="#">
                                 <img src="img/Perforator_1.png" width="218px" height="170px"
@@ -297,10 +298,10 @@
         </div>
 
         <div class="catalog-btns">
-            <button class="catalog-btns__btn">1</button>
-            <button class="catalog-btns__btn">2</button>
-            <button class="catalog-btns__btn">3</button>
-            <button class="catalog-btns__btn catalog-btn__btn--next">Следующая</button>
+            <a class="catalog-btns__btn catalog-btns__btn--current">1</a>
+            <a class="catalog-btns__btn">2</a>
+            <a class="catalog-btns__btn">3</a>
+            <a class="catalog-btns__btn catalog-btn__btn--next">Следующая</a>
         </div>
     </main>
 
@@ -312,7 +313,8 @@
             <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
                 кирпиче, бетоне и камне.</p>
             <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
-                дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
+                дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном
+                устройстве будут совмещены отбойный молоток и
                 ударная дрель.</p>
         </div>
     </article>
@@ -370,7 +372,7 @@
                 </div>
                 <div class="footer__developed">
                     Разработано —
-                    <a href="#">htmlacademy.ru</a>
+                    <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
                 </div>
             </div>
         </div>
@@ -381,7 +383,7 @@
             <div>Товар добавлен в корзину!</div>
         </div>
         <div class="modal-cart__buttons">
-            <a class="modal-cart__order" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+            <a class="modal-cart__order button-style" href="#">ОФОРМИТЬ ЗАКАЗ</a>
             <button class="modal-cart__continue">ПРОДОЛЖИТЬ ПОКУПКИ</button>
         </div>
     </div>
