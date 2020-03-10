@@ -30,6 +30,11 @@ a {
   text-align: center;
 }
 
+.header__logo{
+  width: 220px;
+  height: 47px;
+}
+
 .header__logo:hover {
   background-color: #ca2c37;
   cursor: pointer;
@@ -56,19 +61,33 @@ a {
   flex-wrap: wrap;
 }
 
-.header__search {
-  width: 270px;
+.header__btn-search {
+  width: 45px;
   height: 42px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #293449;
+}
+
+.header__search-form {
+  height: 42px;
+}
+
+.header__search {
+  width: 225px;
+  height: 42px;
+  padding-left: 5px;
   color: #ffffff;
   border: none;
   font-size: 17px;
   line-height: 42px;
-  padding-left: 49px;
   background: url('../img/icon-search.svg') 15px 12px no-repeat;
 }
 
 .header__search::placeholder {
-  opacity: 1;
+  color: #ffffff;
 }
 
 .header__search:hover {
@@ -283,7 +302,6 @@ a {
 }
 
 .header__account {
-  position: relative;
   margin-left: 51px;
 }
 
@@ -293,7 +311,7 @@ a {
 }
 
 .header__account-name {
-  min-width: 299px;
+  min-width: 239px;
   line-height: 21px;
   font-size: 21px;
   padding-left: 47px;
@@ -313,11 +331,9 @@ a {
 }
 
 .header__account-logout {
-  position: absolute;
   width: 60px;
   height: 45px;
-  right: 0;
-  top: 0;
+  cursor: pointer;
   background: url('../img/icon-logout.svg') 25px 14px no-repeat #ffffff;
 }
 
@@ -383,7 +399,7 @@ a {
 
 .menu {
   width: auto;
-  min-height: 60px;
+  
   margin-top: 31px;
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
@@ -394,7 +410,6 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
-  line-height: 55px;
   font-size: 17px;
   margin: 0;
   padding: 0;
@@ -414,10 +429,10 @@ a {
 
 .menu__items a {
   display: block;
-  padding: 0 31px;
+  padding: 21px 31px;
   text-align: center;
   color: #ffffff;
-  line-height: 60px;
+  line-height: 18px;
 }
 
 .main-info {
@@ -747,6 +762,7 @@ a {
   padding: 0;
   padding-left: 23px;
   text-align: left;
+  outline: none;
 }
 
 .service__list-button--2 {
@@ -1026,7 +1042,7 @@ a {
   font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: 20px;
+  
 }
 
 .range-controls {
@@ -1231,6 +1247,7 @@ a {
 
 .catalog-wrapper2 {
   min-width: 220px;
+  margin-top: 20px;
 }
 
 .catalog {
