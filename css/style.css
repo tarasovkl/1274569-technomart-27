@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+.main-title {
+  display: none;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -359,8 +363,8 @@ a {
 .icon-user {
   fill: #c5c5c5;
   position: absolute;
-  left: 12px;
-  top: 12px;
+  left: 14px;
+  top: 13px;
 }
 
 .header__account-name:active .icon-user {
@@ -378,12 +382,13 @@ a {
   height: 45px;
   cursor: pointer;
   background-color: #ffffff;
+  flex-grow: 1;
 }
 
 .icon-logout {
   position: absolute;
   fill: #c5c5c5;
-  left: 26px;
+  left: 29px;
   top: 14px;
 }
 
@@ -782,23 +787,24 @@ a {
   min-height: 123px;
   display: flex;
   justify-content: space-between;
-  margin-top: 74px;
+  margin-top: 69px;
   flex-wrap: wrap;
 }
 
 .service h2 {
   font-size: 30px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
   color: #000000;
   margin: 0;
-  padding-top: 58px;
+  padding-top: 65px;
 }
 
 .service__info {
   max-width: 398px;
   margin: 0;
-  padding-top: 38px;
+  padding-top: 26px;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -831,6 +837,7 @@ a {
   border: none;
   color: #ffffff;
   font-size: 20px;
+  font-weight: 700;
   padding: 0;
   padding-left: 23px;
   text-align: left;
@@ -862,17 +869,19 @@ a {
   padding-left: 80px;
   background-image: url('../img/delivery.png');
   background-repeat: no-repeat;
-  background-position: right 30px;
+  background-position: right 23px;
 }
+
+
 
 .service__list-guarantee {
   display: none;
   min-height: 269px;
   flex-grow: 1;
-  padding-left: 70px;
+  padding-left: 80px;
   background-image: url('../img/guarantee.png');
   background-repeat: no-repeat;
-  background-position: right 10px;
+  background-position: right 1px;
 }
 
 .service__list-credit {
@@ -882,7 +891,7 @@ a {
   padding-left: 80px;
   background-image: url('../img/credit.png');
   background-repeat: no-repeat;
-  background-position: right 10px;
+  background-position: right -1px;
 }
 
 .service__list-sendbutton {
@@ -915,8 +924,16 @@ a {
   margin: 20px 0 0 0;
 }
 
+.service__list-about--delivery {
+  max-width: 275px;
+}
+
+.service__list-about--deliveryBot {
+  margin-top: 0;
+}
+
 .service__list-about--guarantee {
-  min-width: 397px;
+  min-width: 379px;
 }
 
 .breadcrumbs {
@@ -925,7 +942,7 @@ a {
   font-size: 13px;
   text-transform: uppercase;
   list-style: none;
-  margin: 25px 0 25px 0px;
+  margin: 20px 0;
   padding: 0;
   line-height: 18px;
 }
@@ -947,7 +964,7 @@ a {
   height: 12px;
   left: -23px;
   top: 3px;
-  background: url('../img/icon-right-small.svg');
+  background: url('../img/icon-right-small.svg') center no-repeat;
 }
 
 .breadcrumbs__home {
@@ -965,7 +982,7 @@ a {
   width: 14px;
   height: 12px;
   top: 3px;
-  background: url('../img/icon-home.svg');
+  background: url('../img/icon-home.svg') center no-repeat;
 }
 
 .container__title {
@@ -993,7 +1010,7 @@ a {
   display: inline-block;
   line-height: 38px;
   vertical-align: middle;
-  padding-left: 18px;
+  padding-left: 19px;
   text-transform: uppercase;
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
@@ -1035,15 +1052,15 @@ a {
 }
 
 .sort__type--price {
-  margin-right: 73px;
+  margin-right: 71px;
 }
 
 .sort__type--type {
-  margin-right: 63px;
+  margin-right: 64px;
 }
 
 .sort__type--function {
-  margin-right: 43px;
+  margin-right: 47px;
 }
 
 .sort__button {
@@ -1059,7 +1076,7 @@ a {
 }
 
 .sort__button--up {
-  margin-right: 21px;
+  margin-right: 20px;
 }
 
 .icon-up {
@@ -1486,6 +1503,7 @@ a {
   width: auto;
   font-size: 0;
   margin-left: 240px;
+  margin-top: 31px;
 }
 
 .catalog-btns__btn {
@@ -1525,7 +1543,9 @@ a {
 .perforator-info {
   width: auto;
   min-height: 261px;
+  margin-top: 60px;
   background-color: #f4f7f9;
+  
 }
 
 .perforator-info h2 {
@@ -1534,12 +1554,14 @@ a {
   font-size: 30px;
   line-height: 30px;
   padding-top: 67px;
+  margin: 0 0 24px 0;
 }
 
 .perforator-info p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
+  max-width: 911px;
   margin: 0;
 }
 

@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <h1 class="main-title">Интернет-магазин Техномарт</h1>
   <header class="header">
     <div class="header__top">
       <div class="container">
@@ -22,8 +24,8 @@
               </svg>
             </a>
           </div>
-          <form class="header__search-form" action="" autocomplete="off">
-            <button type="submit" class="header__btn-search" href="#">
+          <form class="header__search-form" action="/somewhere_else" autocomplete="off">
+            <button type="submit" class="header__btn-search">
             </button>
             <input class="header__search" type="search" name="search" id="search" placeholder="Поиск:">
             <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
@@ -108,14 +110,14 @@
         <div class="slider-item-1">
           <p class="slider-item-header">Дрели</p>
           <p class="slider-item-label">Соседям на радость!</p>
-          <div class="main-info__slider-control main-info__slider-left"></div> 
-          <div class="main-info__slider-control main-info__slider-right main-info__slider-indicator "></div> 
+          <div class="main-info__slider-control main-info__slider-left"></div>
+          <div class="main-info__slider-control main-info__slider-right main-info__slider-indicator "></div>
         </div>
         <div class="slider-item-2">
           <p class="slider-item-header">Перфораторы</p>
           <p class="slider-item-label">Настоящие мужские игрушки</p>
-          <div class="main-info__slider-control main-info__slider-left main-info__slider-indicator"></div> 
-          <div class="main-info__slider-control main-info__slider-right"></div> 
+          <div class="main-info__slider-control main-info__slider-left main-info__slider-indicator"></div>
+          <div class="main-info__slider-control main-info__slider-right"></div>
         </div>
       </div>
       <div class="main-info__wrapper">
@@ -277,10 +279,10 @@
         <div class="service__list-delivery">
           <p class="service__list-head">Доставка</p>
           <p class="service__list-about">
-            Мы с удовольствием доставим ваш товар прямо<br>
-            к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем,<br>
-            поднимая его на ваш этаж!</p>
+            <p class="service__list-about service__list-about--delivery">Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно!</p>
+            <p class="service__list-about service__list-about--deliveryBot">Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!</p>
         </div>
         <div class="service__list-guarantee">
           <p class="service__list-head">Гарантия</p>
@@ -335,10 +337,8 @@
           Вы можете забрать товар сами,
           заехав в наш офис:
         </p>
-        <a class="article__map" href="#">
-          <img src="img/map.png" width="300px" height="158px" alt="Изображение карты">
-        </a>
-
+        <a class="article__map" href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387969,30.3208946,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833">
+          <img src="img/map.png" width="300" height="158" alt="Изображение карты">
         </a>
         <a class="article__feedback-button button-style" href="#">
           Заблудились? Напишите нам!
@@ -352,7 +352,10 @@
         <div class="footer__content-head">
           <div class="footer__logo">
             <a href="#">
-              <img src="img/logo-footer.png" width="138" height="23" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="138" height="23">
+                <path fill="#FFF" fill-rule="evenodd"
+                  d="M132.538 3.057v18.9h-2.7v-18.9h-4.8v-2.1h12.3v2.1h-4.8zm-10.395 11.115c-.47.59-1.06 1.01-1.77 1.26s-1.555.375-2.535.375c-.46 0-.98-.03-1.56-.09-.58-.06-1.06-.13-1.44-.21v6.45h-2.7v-20.7c.76-.22 1.525-.375 2.295-.465.77-.09 1.605-.135 2.505-.135 1.2 0 2.22.125 3.06.375.84.25 1.52.665 2.04 1.245.52.58.9 1.35 1.14 2.31.24.96.36 2.15.36 3.57 0 1.46-.115 2.68-.345 3.66-.23.98-.58 1.765-1.05 2.355zm-1.53-8.715c-.15-.72-.385-1.29-.705-1.71a2.55 2.55 0 0 0-1.215-.885c-.49-.17-1.075-.255-1.755-.255h-2.1v11.1h2.1c.68 0 1.265-.085 1.755-.255.49-.169.895-.465 1.215-.885.32-.42.555-.99.705-1.71.15-.72.225-1.62.225-2.7s-.075-1.98-.225-2.7zm-15.225 11.1h-6l-1.35 5.4h-2.7l5.1-21h3.9l5.1 21h-2.7l-1.35-5.4zm-2.94-12.6h-.12l-2.49 10.5h5.1l-2.49-10.5zm-12.96 2.4h-.149l-4.351 12.9h-2.7l-4.35-12.9h-.15l-.9 15.6h-2.7l1.2-21h3.3l4.89 14.4h.12l4.89-14.4h3.301l1.199 21h-2.7l-.9-15.6zm-20.159 13.65c-.561.82-1.236 1.4-2.025 1.74-.791.34-1.696.51-2.716.51-1.019 0-1.925-.17-2.715-.51-.79-.34-1.465-.92-2.025-1.74-.56-.82-.985-1.925-1.275-3.315-.29-1.39-.435-3.135-.435-5.235 0-2.1.145-3.845.435-5.235.29-1.39.715-2.495 1.275-3.315.56-.82 1.235-1.4 2.025-1.74.79-.34 1.696-.51 2.715-.51 1.02 0 1.925.17 2.716.51.789.34 1.464.92 2.025 1.74.559.82.984 1.925 1.274 3.315.29 1.39.436 3.135.436 5.235 0 2.1-.146 3.845-.436 5.235-.29 1.39-.715 2.495-1.274 3.315zm-1.305-12.99c-.211-1.16-.486-2.08-.826-2.76-.34-.68-.74-1.15-1.2-1.41-.46-.26-.93-.39-1.41-.39-.48 0-.95.13-1.409.39-.461.26-.861.73-1.201 1.41-.34.68-.614 1.6-.825 2.76-.21 1.16-.314 2.64-.314 4.44 0 1.8.104 3.28.314 4.44.211 1.16.485 2.08.825 2.76.34.68.74 1.15 1.201 1.41.459.26.929.39 1.409.39s.95-.13 1.41-.39c.46-.26.86-.73 1.2-1.41.34-.68.615-1.6.826-2.76.21-1.16.314-2.64.314-4.44 0-1.8-.104-3.28-.314-4.44zm-16.185 5.34h-6.301v9.6h-2.699v-21h2.699v9.3h6.301v-9.3h2.699v21h-2.699v-9.6zm-14.25 9.6l-3.75-9-3.75 9h-2.7l4.5-10.8-4.05-10.2h2.7l3.3 8.4 3.3-8.4h2.7l-4.05 10.2 4.5 10.8h-2.7zm-22.05-21h10.2v2.1h-7.5v6.9h6.6v2.1h-6.6v7.8h7.5v2.1h-10.2v-21zm-7.2 21h-2.7v-18.9h-4.8v-2.1h12.3v2.1h-4.8v18.9z" />
+              </svg>
             </a>
           </div>
           <ul class=footer__nav>
@@ -398,7 +401,7 @@
                 viewBox="0 0 21 21">
                 <path fill="#FFF"
                   d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z" />
-                </svg></a></li>
+              </svg></a></li>
         </ul>
         <div class="footer__mail">
           Обратная связь:
@@ -412,18 +415,18 @@
     </div>
   </footer>
   <div class="modal-form">
-    <form class="modal-form__contact-form" action="">
+    <form class="modal-form__contact-form" action="/somewhere_else">
       <div class="modal-form__input-name">
         <label for="name">Ваше имя:</label>
-        <input type="text" name="" id="name" placeholder="Имя Фамилия" autocomplete="off">
+        <input type="text" name="your-name" id="name" placeholder="Имя Фамилия" autocomplete="off">
       </div>
       <div class="modal-form__input-email">
         <label for="mail">Ваш e-mail:</label>
-        <input type="email" name="" id="mail" placeholder="email@example.com">
+        <input type="email" name="your-email" id="mail" placeholder="email@example.com">
       </div>
       <div class="modal-form__input-text">
         <label for="message">Текст письма:</label>
-        <textarea name="" id="message" placeholder="В свободной форме"></textarea>
+        <textarea name="text" id="message" placeholder="В свободной форме"></textarea>
       </div>
       <button class="modal-form__close"></button>
     </form>
@@ -435,7 +438,8 @@
     <button class="modal-map__close"></button>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65208041552586!2d30.322860502356562!3d59.93864124543618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1580239298729!5m2!1sru!2sru"
-      width="940px" height="447px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      width="940" height="447" style="border:0;" allowfullscreen=""></iframe>
   </div>
 </body>
+
 </html>
