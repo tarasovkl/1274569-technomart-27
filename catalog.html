@@ -23,16 +23,14 @@
                             </svg>
                         </a>
                     </div>
-
                     <form class="header__search-form" action="">
-                        <button class="header__btn-search" href="#">
-                            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17"
-                                viewBox="0 0 17 17">
-                                <path
-                                    d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
-                            </svg>
-                        </button>
-                        <input class="header__search" type="search" name="search" id="search" placeholder="Поиск:">
+                        <button class="header__btn-search" href="#"></button>
+                        <input class="header__search" type="search" name="search" id="search" placeholder="Поиск:" autocomplete="off">
+                        <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                            viewBox="0 0 17 17">
+                            <path
+                                d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+                        </svg>
                     </form>
                     <a class="header__btn header__btn--bookmarks" href="#">
                         <svg class="icon-bookmark" xmlns="http://www.w3.org/2000/svg" width="14" height="16"
@@ -132,50 +130,50 @@
                         width="11" height="10" viewBox="0 0 11 10">
                         <path d="M5.5 10L0 0h11" /></svg></a>
             </div>
-            
-                <form class="filter-form" action="" method="GET">
-                    <fieldset class="filter-item">
-                        <legend>Цена:</legend>
-                        <div class="range-filter">
-                            <div class="range-controls">
-                                <div class="scale">
-                                    <div class="bar" style="margin-left: 0%; width: 80%"></div>
-                                </div>
-                                <div class="toggle toggle--min"></div>
-                                <div class="toggle toggle--max"></div>
+
+            <form class="filter-form" action="" method="GET">
+                <fieldset class="filter-item">
+                    <legend>Цена:</legend>
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar" style="margin-left: 0%; width: 80%"></div>
                             </div>
-                            <div class="price-controls">
-                                <input type="number" name="min-price" value="0">
-                                <input type="number" name="max-price" value="30000">
-                            </div>
+                            <div class="toggle toggle--min"></div>
+                            <div class="toggle toggle--max"></div>
                         </div>
-                    </fieldset>
+                        <div class="price-controls">
+                            <input type="number" name="min-price" value="0">
+                            <input type="number" name="max-price" value="30000">
+                        </div>
+                    </div>
+                </fieldset>
 
 
-                    <div class="manufacturer">
-                        <p class="manufacturer__title">Производители:</p>
-                        <input type="checkbox" name="manufacturer-name" id="Bosch" checked> 
-                        <label for="Bosch">Bosch</label>
-                        <input type="checkbox" name="manufacturer-name" id="Интерскол">
-                        <label for="Интерскол">Интерскол</label>
-                        <input type="checkbox" name="manufacturer-name" id="Makita" checked>
-                        <label for="Makita">Makita</label>
-                        <input type="checkbox" name="manufacturer-name" id="Dewalt">
-                        <label for="Dewalt">Dewalt</label>
-                        <input type="checkbox" name="manufacturer-name" id="Hitachi">
-                        <label for="Hitachi">Hitachi</label>
-                    </div>
-                    <div class="charge">
-                        <p class="charge__title">Питание:</p>
-                        <input type="radio" name="charge-type" id="Accumulator" checked>
-                        <label for="Accumulator">Аккумуляторные</label>
-                        <input type="radio" name="charge-type" id="Cabel">
-                        <label for="Cable">Сетевые</label>
-                        <input type="submit" value="Показать">
-                    </div>
-                    <button class="filter-form__button" type="submit" >Показать</button>
-                </form>
-            
+                <div class="manufacturer">
+                    <p class="manufacturer__title">Производители:</p>
+                    <input type="checkbox" name="manufacturer-name" id="Bosch" checked>
+                    <label for="Bosch">Bosch</label>
+                    <input type="checkbox" name="manufacturer-name" id="Интерскол">
+                    <label for="Интерскол">Интерскол</label>
+                    <input type="checkbox" name="manufacturer-name" id="Makita" checked>
+                    <label for="Makita">Makita</label>
+                    <input type="checkbox" name="manufacturer-name" id="Dewalt">
+                    <label for="Dewalt">Dewalt</label>
+                    <input type="checkbox" name="manufacturer-name" id="Hitachi">
+                    <label for="Hitachi">Hitachi</label>
+                </div>
+                <div class="charge">
+                    <p class="charge__title">Питание:</p>
+                    <input type="radio" name="charge-type" id="Accumulator" checked>
+                    <label for="Accumulator">Аккумуляторные</label>
+                    <input type="radio" name="charge-type" id="Cabel">
+                    <label for="Cable">Сетевые</label>
+                    <input type="submit" value="Показать">
+                </div>
+                <button class="filter-form__button" type="submit">Показать</button>
+            </form>
+
 
 
             <section class="catalog">
@@ -494,7 +492,7 @@
         <div class="modal-cart__buttons">
             <a class="modal-cart__order button-style" href="#">ОФОРМИТЬ ЗАКАЗ</a>
             <button class="modal-cart__continue">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-            
+
         </div>
     </div>
 </body>
