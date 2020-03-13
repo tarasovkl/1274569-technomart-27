@@ -120,6 +120,7 @@ a {
   opacity: 0.3;
   left: 18px;
   top: 12px;
+  pointer-events: none;
 }
 
 .header__search:hover + .icon-search {
@@ -162,6 +163,7 @@ a {
   left: 17px;
   fill: #ffffff;
   fill-opacity: 0.3;
+  pointer-events: none;
 }
 
 .header__btn--bookmarks:hover .icon-bookmark {
@@ -189,6 +191,7 @@ a {
   left: 18px;
   fill: #ffffff;
   fill-opacity: 0.3;
+  pointer-events: none;
 }
 
 .header__btn--cart:hover .icon-cart {
@@ -260,7 +263,7 @@ a {
   font-size: 21px;
   line-height: 21px;
   border: solid 3px #ffffff;
-  padding: 10px 49px 8px 71px;
+  padding: 10px 48px 8px 71px;
   color: #ee3643;
   background: url('../img/icon-phone.svg') 11px 10px no-repeat;
 }
@@ -313,6 +316,7 @@ a {
   fill: #c5c5c5;
   left: 14px;
   top: 14px;
+  pointer-events: none;
 }
 
 .sign-up {
@@ -365,6 +369,7 @@ a {
   position: absolute;
   left: 14px;
   top: 13px;
+  pointer-events: none;
 }
 
 .header__account-name:active .icon-user {
@@ -390,6 +395,7 @@ a {
   fill: #c5c5c5;
   left: 29px;
   top: 14px;
+  
 }
 
 .icon-logout:hover {
@@ -462,6 +468,7 @@ a {
 
 .menu__items {
   display: flex;
+  text-align: center;
   justify-content: space-around;
   list-style: none;
   font-size: 17px;
@@ -802,7 +809,7 @@ a {
 }
 
 .service__info {
-  max-width: 398px;
+  max-width: 399px;
   margin: 0;
   padding-top: 26px;
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -938,7 +945,7 @@ a {
 
 .breadcrumbs {
   display: flex;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   list-style: none;
@@ -1012,7 +1019,7 @@ a {
   vertical-align: middle;
   padding-left: 19px;
   text-transform: uppercase;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
 }
 
@@ -1028,7 +1035,7 @@ a {
 .sort__type {
   height: 18px;
   margin-top: 9px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   border-bottom: 1px dotted #ee3643;
@@ -1222,7 +1229,7 @@ a {
 }
 
 .manufacturer label::before, .charge label::before {
-  content: "";
+  content: '';
   width: 27px;
   height: 25px;
   position: absolute;
@@ -1329,6 +1336,7 @@ a {
 }
 
 .catalog {
+  display: flex;
   max-width: 700px;
   font-family: 'PT Sans', 'Arial', sans-serif;
 }
@@ -1336,6 +1344,7 @@ a {
 .catalog__list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   padding-left: 0;
   justify-content: space-between;
   margin-top: 20px;
@@ -1385,8 +1394,6 @@ a {
   display: block;
   margin: 8px auto;
   width: 141px;
-  height: 38px;
-  
   font-size: 17px;
   line-height: 18px;
   padding: 10px 0;
@@ -1416,7 +1423,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 89px;
+  height: 89px;
   top: 44px;
   left: 41px;
   margin: 0;
@@ -1428,7 +1435,6 @@ a {
   line-height: 18px;
   font-size: 14px;
   font-family: 'Cuprum', 'Arial', sans-serif;
-  ;
   text-transform: uppercase;
   padding: 10px 0;
   margin: 0 auto;
@@ -1463,7 +1469,6 @@ a {
   line-height: 18px;
   font-size: 14px;
   font-family: 'Cuprum', 'Arial', sans-serif;
-  ;
   text-transform: uppercase;
   padding: 10px 0;
   margin: 0 auto;
@@ -1488,14 +1493,13 @@ a {
   color: #999999;
   margin: 0 0 2px 0;
   line-height: 18px;
-  
 }
 
 .catalog__price-wrapper {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  min-height: 87px;
+  height: 87px;
   margin-bottom: 12px;
 }
 
@@ -1516,7 +1520,7 @@ a {
   background-color: #ffffff;
   margin-right: 10px;
   padding-top: 10px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -1593,11 +1597,11 @@ a {
 }
 
 .article__info-text--right {
-  max-width: 179px;
+  max-width: 180px;
 }
 
 .article__info-text--left {
-  max-width: 386px;
+  max-width: 387px;
 }
 
 .article__info-about ul {
@@ -1883,7 +1887,7 @@ margin-bottom: 36px;
 }
 
 .modal-form::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 21px;
   height: 21px;
@@ -1898,7 +1902,7 @@ margin-bottom: 36px;
   background-color: white;
   width: 220px;
   height: 38px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   padding-left: 16px;
   outline: none;
@@ -1945,7 +1949,7 @@ margin-bottom: 36px;
   padding: 13px 16px;
   outline: none;
   resize: none;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 13px;
   border: solid 2px #d7dcde;
@@ -2002,7 +2006,7 @@ margin-bottom: 36px;
 }
 
 .modal-map::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 21px;
   height: 21px;
@@ -2040,7 +2044,7 @@ margin-bottom: 36px;
 }
 
 .modal-cart__info::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 21px;
   height: 21px;
@@ -2059,7 +2063,7 @@ margin-bottom: 36px;
 }
 
 .modal-cart__info div::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 66px;
   height: 66px;
