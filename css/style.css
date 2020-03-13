@@ -1074,7 +1074,7 @@ a {
   position: relative;
   display: block;
   padding: 0;
-  margin-top: 9px;
+  margin-top: 13px;
   width: 11px;
   height: 10px;
   border: none;
@@ -1087,6 +1087,9 @@ a {
 }
 
 .icon-up {
+  position: absolute;
+  left:0;
+  top:0;
   fill: #c5c5c5;
 }
 
@@ -1099,6 +1102,9 @@ a {
 }
 
 .icon-down {
+  position: absolute;
+  left:0;
+  top:0;
   fill: #c5c5c5;
 }
 
@@ -1877,7 +1883,7 @@ margin-bottom: 36px;
 }
 
 .modal-form {
-  display: none;
+  display: block;
   position: relative;
   width: 620px;
   height: 430px;
@@ -1996,7 +2002,7 @@ margin-bottom: 36px;
 }
 
 .modal-map {
-  display: none;
+  display: block;
   position: relative;
   width: 940px;
   height: 447px;
@@ -2029,7 +2035,7 @@ margin-bottom: 36px;
 }
 
 .modal-cart {
-  display: none;
+  display: block;
   width: 620px;
   height: 282px;
   margin: 0 auto;
