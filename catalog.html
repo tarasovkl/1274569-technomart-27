@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <h1 class="main-title">Интернет-магазин Техномарт</h1>
@@ -113,12 +112,14 @@
         <p class="filter__label">Фильтр:</p>
       </div>
       <div class="sort">
-        <a class="sort__type sort__type--label" href="#">Сортировка:</a>
-        <a class="sort__type sort__type--price" href="#">По цене</a>
-        <a class="sort__type sort__type--type" href="#">По типу</a>
-        <a class="sort__type sort__type--function" href="#">По функционалу</a>
+        <p class="sort__label">Сортировка:</p>
+        <div class="sort-wrapper">
+          <a class="sort__type sort__type--price sort__type--active" href="#">По цене</a>
+          <a class="sort__type sort__type--type" href="#">По типу</a>
+          <a class="sort__type sort__type--function" href="#">По функционалу</a>
+        </div>
         <a class="sort__button sort__button--up">
-          <svg class="icon-up" xmlns="http://www.w3.org/2000/svg" width="11"
+          <svg class="icon-up icon-active" xmlns="http://www.w3.org/2000/svg" width="11"
             height="10" viewBox="0 0 11 10">
             <path d="M5.5 0L0 10h11z" />
           </svg>
@@ -507,7 +508,7 @@
   </footer>
   <div class="modal-cart">
     <div class="modal-cart__info">
-      <div>Товар добавлен в корзину!</div>
+      <div class="modal-cart__header">Товар добавлен в корзину!</div>
       <button class="modal-cart__close"></button>
     </div>
     <div class="modal-cart__buttons">
