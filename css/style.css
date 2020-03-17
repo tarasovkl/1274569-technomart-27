@@ -1127,14 +1127,14 @@ a {
   padding-left: 19px;
   text-transform: uppercase;
   font-family: 'PT Sans', 'Arial', sans-serif;
-  
+
 }
 
 .sort {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  
+
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -1152,7 +1152,7 @@ a {
   margin-right: 47px;
   margin-bottom: 9px;
   margin-top: 9px;
-  
+
 }
 
 .sort__label {
@@ -1332,7 +1332,7 @@ a {
 
 .price-controls::before {
   position: absolute;
-  display: block;
+  display: ;
   content: '';
   width: 10px;
   height: 1px;
@@ -1386,8 +1386,9 @@ a {
   height: 25px;
   position: absolute;
   left: 0;
-  top: 0px;
+  top: 0;
 }
+
 
 .manufacturer label, .charge label {
   width: 220px;
@@ -1406,7 +1407,21 @@ a {
 }
 
 .manufacturer input, .charge input {
-  display: none;
+  visibility: hidden;
+  position: absolute;
+  width: 27px;
+  height: 25px;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.manufacturer input:focus + label{
+  border: 1px solid #00f;
+}
+
+.charge input:focus + label{
+  border: 1px solid #00f;
 }
 
 .manufacturer label::before {
@@ -2153,7 +2168,7 @@ a {
 
 .modal-form__input-text {
   margin-top: 21px;
-  
+
 }
 
 .modal-form__input-text textarea {
