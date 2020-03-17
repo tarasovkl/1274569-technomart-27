@@ -2093,6 +2093,8 @@ a {
   border-top: solid 7px #ee3643;
 }
 
+
+
 .modal-form::before {
   content: '';
   position: absolute;
@@ -2192,6 +2194,7 @@ a {
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
+  outline: none;
 }
 
 .modal-form__close {
@@ -2345,4 +2348,8 @@ a {
   background-color: transparent;
   outline: none;
   cursor: pointer;
+}
+
+.modal-form__show {
+  display: block;
 }
