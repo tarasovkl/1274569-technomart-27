@@ -1740,6 +1740,7 @@ a {
   width: auto;
   min-height: 261px;
   margin-top: 60px;
+  padding-bottom: 68px;
   background-color: #f4f7f9;
 }
 
@@ -2089,6 +2090,7 @@ a {
   border-radius: 3px;
   line-height: 18px;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 .button-style:hover {

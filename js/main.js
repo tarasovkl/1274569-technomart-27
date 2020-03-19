@@ -36,7 +36,14 @@ linkMap.addEventListener("click", function (evt) {
     popupMap.classList.add("modal-form__show");
 });
 
-
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popupMap.classList.contains("modal-form__show")) {
+            popupMap.classList.remove("modal-form__show");
+        }
+    }
+});
 
 
 
