@@ -27,6 +27,21 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
+var linkMap = document.querySelector(".article__map");
+
+var popupMap = document.querySelector(".modal-map");
+
+linkMap.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupMap.classList.add("modal-form__show");
+});
+
+
+
+
+
+
+
 
 
 
