@@ -931,7 +931,7 @@ a {
   margin: 0;
   border: none;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 30px;
   font-weight: 700;
   padding: 0;
@@ -2143,6 +2143,10 @@ a {
   outline: none;
 }
 
+.modal-form__contact-form input::placeholder {
+  color: #a9a9a9;
+}
+
 .modal-form__contact-form input:hover {
   border-color: #b5b5b5;
 }
@@ -2194,6 +2198,10 @@ a {
   background-color: white;
 }
 
+.modal-form__input-text textarea::placeholder {
+  color: #a9a9a9;
+}
+
 .modal-form__input-text textarea:hover {
   border-color: #b5b5b5;
 }
@@ -2235,7 +2243,6 @@ a {
 }
 
 @keyframes bounce {
-
   0% {
     transform: translateX(-50%) translateY(-2000px);
   }
