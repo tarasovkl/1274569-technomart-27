@@ -428,6 +428,7 @@
     </div>
   </footer>
   <div class="modal-form">
+    <button class="modal-form__close"></button>
     <form class="modal-form__contact-form" action="/somewhere_else" method="post">
       <div class="modal-form__input-name">
         <label for="name">Ваше имя:</label>
@@ -441,17 +442,26 @@
         <label for="message">Текст письма:</label>
         <textarea name="text" id="message" placeholder="В свободной форме"></textarea>
       </div>
-      <button class="modal-form__close"></button>
-    </form>
     <div class="modal-form__btn-background">
-      <button class=" button-style" type="submit">Отправить</button>
+      <button class="button-style" type="submit">Отправить</button>
     </div>
+  </form>
   </div>
   <div class="modal-map">
     <button class="modal-form__close"></button>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65208041552586!2d30.322860502356562!3d59.93864124543618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1580239298729!5m2!1sru!2sru"
       width="940" height="447" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+  <div class="modal-cart">
+    <div class="modal-cart__info">
+      <div class="modal-cart__header">Товар добавлен в корзину!</div>
+    </div>
+    <div class="modal-cart__buttons">
+      <a class="modal-cart__order button-style" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+      <button class="modal-cart__continue">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+    </div>
+    <button class="modal-form__close"></button>
   </div>
   <script src="js/main.js"></script>
 </body>
