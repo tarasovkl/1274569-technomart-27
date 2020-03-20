@@ -504,7 +504,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
@@ -764,7 +765,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -787,7 +789,8 @@ a {
 
 .popular__button {
   display: block;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 253px;
   height: 38px;
   font-size: 14px;
@@ -801,8 +804,11 @@ a {
 }
 
 .popular__wrapper {
-  flex-basis: 600px;
-  flex-grow: 0;
+  -ms-flex-preferred-size: 600px;
+      flex-basis: 600px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 
 .main__catalog {
@@ -1150,11 +1156,19 @@ a {
 }
 
 .sort-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-grow: 0;
-  flex-basis: 354px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 354px;
+      flex-basis: 354px;
   margin-right: 47px;
   margin-bottom: 9px;
   margin-top: 9px;
@@ -1211,8 +1225,11 @@ a {
 .sort__button {
   position: relative;
   display: block;
-  flex-shrink: 0;
-  flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   padding: 0;
   margin-top: 13px;
   width: 11px;
@@ -1713,6 +1730,7 @@ a {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
+  color: #000000;
   text-transform: uppercase;
   border-radius: 3px;
 }
@@ -1930,7 +1948,8 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  flex-basis: 547px;
+  -ms-flex-preferred-size: 547px;
+      flex-basis: 547px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1958,7 +1977,8 @@ a {
 }
 
 .footer__nav--color {
-  flex-basis: 524px;
+  -ms-flex-preferred-size: 524px;
+      flex-basis: 524px;
   margin-top: 28px;
 }
 
@@ -2116,7 +2136,8 @@ a {
   -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   border-top: solid 7px #ee3643;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-form::before {
@@ -2140,6 +2161,22 @@ a {
   line-height: 18px;
   padding-left: 16px;
   outline: none;
+}
+
+.modal-form__contact-form input::-webkit-input-placeholder {
+  color: #a9a9a9;
+}
+
+.modal-form__contact-form input::-moz-placeholder {
+  color: #a9a9a9;
+}
+
+.modal-form__contact-form input:-ms-input-placeholder {
+  color: #a9a9a9;
+}
+
+.modal-form__contact-form input::-ms-input-placeholder {
+  color: #a9a9a9;
 }
 
 .modal-form__contact-form input::placeholder {
@@ -2197,6 +2234,22 @@ a {
   background-color: white;
 }
 
+.modal-form__input-text textarea::-webkit-input-placeholder {
+  color: #a9a9a9;
+}
+
+.modal-form__input-text textarea::-moz-placeholder {
+  color: #a9a9a9;
+}
+
+.modal-form__input-text textarea:-ms-input-placeholder {
+  color: #a9a9a9;
+}
+
+.modal-form__input-text textarea::-ms-input-placeholder {
+  color: #a9a9a9;
+}
+
 .modal-form__input-text textarea::placeholder {
   color: #a9a9a9;
 }
@@ -2241,18 +2294,41 @@ a {
   cursor: pointer;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateX(-50%) translateY(-2000px);
+    -webkit-transform: translateX(-50%) translateY(-2000px);
+            transform: translateX(-50%) translateY(-2000px);
   }
   70% {
-    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
   90% {
-    transform: translateX(-50%) translateY(-52%);
+    -webkit-transform: translateX(-50%) translateY(-52%);
+            transform: translateX(-50%) translateY(-52%);
   }
   100% {
-    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-2000px);
+            transform: translateX(-50%) translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+  }
+  90% {
+    -webkit-transform: translateX(-50%) translateY(-52%);
+            transform: translateX(-50%) translateY(-52%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
 }
 
@@ -2271,7 +2347,8 @@ a {
   -webkit-box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
   background-color: #565656;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-map::before {
@@ -2299,7 +2376,8 @@ a {
   -webkit-box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
   border-top: solid 7px #ee3643;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-cart__info {
