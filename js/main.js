@@ -10,6 +10,12 @@ var popupMap = document.querySelector(".modal-map");
 
 if (popup) {
   var yourname = popup.querySelector("[id=name]");
+
+  var form = popup.querySelector(".modal-form__contact-form");
+
+  var email = popup.querySelector("[id=mail]");
+
+  var text = popup.querySelector("[id=message]");
 }
 
 var linkCart = document.querySelectorAll(".catalog__buy");
@@ -33,15 +39,34 @@ for (var i = 0; i < close.length; i++) {
   close[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     evt.target.parentElement.classList.remove("modal-form__show");
+    evt.target.parentElement.classList.remove("modal-form__error");
   });
 }
 
+if (popup) {
+  form.addEventListener("submit", function (evt) {
+    evt.preventDefault();
+  });
+}
+
+if (popup) {
+  form.addEventListener("submit", function (evt) {
+    if (!yourname.value || !email.value || !text.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-form__error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-form__error");
+      console.log("Заполните все поля");
+    }
+  });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     if (popup.classList.contains("modal-form__show")) {
       popup.classList.remove("modal-form__show");
+      popup.classList.remove("modal-form__error");
     }
   }
 });

@@ -330,6 +330,16 @@ a{text-decoration:none}
 90%{-webkit-transform:translateX(-50%) translateY(-52%);transform:translateX(-50%) translateY(-52%)}
 100%{-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}
 }
+@-webkit-keyframes shake{
+0%,100%{-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}
+10%,30%,50%,70%,90%{-webkit-transform:translateX(-51%) translateY(-50%);transform:translateX(-51%) translateY(-50%)}
+20%,40%,60%,80%{-webkit-transform:translateX(-49%) translateY(-50%);transform:translateX(-49%) translateY(-50%)}
+}
+@keyframes shake{
+0%,100%{-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}
+10%,30%,50%,70%,90%{-webkit-transform:translateX(-51%) translateY(-50%);transform:translateX(-51%) translateY(-50%)}
+20%,40%,60%,80%{-webkit-transform:translateX(-49%) translateY(-50%);transform:translateX(-49%) translateY(-50%)}
+}
 .modal-map{display:none;width:940px;height:447px;margin:0 auto;position:fixed;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background:#fff;z-index:9;-webkit-box-shadow:0 0 14.7px 1.3px rgba(47,42,43,.5);box-shadow:0 0 14.7px 1.3px rgba(47,42,43,.5);background-color:#565656;-webkit-animation:bounce .6s;animation:bounce .6s}
 .modal-map::before{content:'';position:absolute;width:21px;height:21px;background:url(../img/form-close.svg) no-repeat;right:9px;top:9px}
 .modal-cart{display:none;width:620px;height:282px;margin:0 auto;position:fixed;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background:#fff;z-index:9;-webkit-box-shadow:0 20px 40px 0 rgba(41,52,73,.75);box-shadow:0 20px 40px 0 rgba(41,52,73,.75);border-top:solid 7px #ee3643;-webkit-animation:bounce .6s;animation:bounce .6s}
@@ -341,3 +351,4 @@ a{text-decoration:none}
 .modal-cart__order{width:220px;height:38px;margin:37px 20px;margin-left:80px;background-color:#ee3643;font-size:14px;text-align:center;color:#fff}
 .modal-cart__continue{width:220px;height:38px;margin-top:37px;background-color:#fff;font-size:14px;line-height:18px;text-align:center;color:#000;border:none;outline:0;cursor:pointer}
 .modal-form__show{display:block}
+.modal-form__error{animation:shake .6s}
