@@ -45,19 +45,13 @@ for (var i = 0; i < close.length; i++) {
 
 if (popup) {
   form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-  });
-}
-
-if (popup) {
-  form.addEventListener("submit", function (evt) {
     if (!yourname.value || !email.value || !text.value) {
       evt.preventDefault();
       popup.classList.remove("modal-form__error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-form__error");
-      console.log("Заполните все поля");
     }
+    console.log("Заполните все поля");
   });
 }
 
@@ -109,11 +103,3 @@ cartClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupCart.classList.remove("modal-form__show");
 });
-
-
-
-
-
-
-
-
